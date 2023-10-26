@@ -84,10 +84,11 @@ body{
 .social_links{
     display: flex;
     justify-content: start;
-    margin-top: 50px;
+    margin-top: 20px;
     text-decoration: none;
     list-style-type: none;
     padding-left: 0;
+    margin-left: 6px;
 }
 
 .social_links li{
@@ -98,10 +99,6 @@ body{
 .bi{
     font-size: 30px;
     color: black;
-}
-
-.service_section{
-
 }
 
 .hero_page{
@@ -150,9 +147,10 @@ body{
 
 .service_cards{
     border: 1px dashed white;
-    margin: 20px 10px;
-    height: 85%;
+    margin: 40px 10px;
+    height: 90%;
     padding: 30px 10px;
+    height: 85%;
 }
 
 
@@ -169,7 +167,7 @@ body{
 
 .navbar-black {
     background-color: black !important;
-    transition: background-color 0.3s;
+    transition: background-color 0.7s;
 }
 
 .footer_web{
@@ -285,4 +283,54 @@ footer a{
 
 .links_canvas a:hover{
     color: white;
+}
+
+.non_hero_page_bg{
+    height: 60vh;
+    background-image: url("./pexels-carlo-martin-alcordo-2449785.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.non_hero_page_bg::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+    height: 60vh;
+}
+
+.button_know_more_hero{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button_know_more_hero a{
+    color: white;
+    text-decoration: none;
+}
+
+.service_cards a{
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+}
+
+
+.side_guide_menu ul{
+    list-style: none;
+    list-style-type: none;
+    padding: 0
+}
+
+#eediv, #cediv, #mepdiv, #cerdiv{
+    scroll-margin: 13vh;
 }
